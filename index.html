@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Website</title>
+	<script>
+		function sendMessage() {
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var message = document.getElementById("message").value;
+			
+			// Code to send the message to server or perform any other desired action
+			
+			// Clear the input fields
+			document.getElementById("name").value = "";
+			document.getElementById("email").value = "";
+			document.getElementById("message").value = "";
+		}
+	</script>
+</head>
+<body>
+	<h1>forest forum</h1>
+	<label for="name">Name:</label>
+	<input type="text" id="name"><br><br>
+	<label for="email">Email:</label>
+	<input type="email" id="email"><br><br>
+	<label for="message">Message:</label><br>
+	<textarea id="message"></textarea><br><br>
+	<button onclick="sendMessage()">Send Message</button>
+</body>
+</html>
